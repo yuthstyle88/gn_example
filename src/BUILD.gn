@@ -1,0 +1,15 @@
+
+source_set("example_lib") {
+  sources = [
+    "example.cc",
+  ]
+}
+
+executable("example_app") {
+  sources = [
+    "main.cc",
+  ]
+  deps = [
+    ":example_lib",
+  ]
+}
